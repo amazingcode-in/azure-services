@@ -1,0 +1,10 @@
+version: '3.8'
+name: azure-services
+services:
+  azure-services:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: azure-services
+    ports:
+      - "9090:9090"
